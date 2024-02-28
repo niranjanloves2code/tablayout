@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Horizontal Tab</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="btn-box">
+           
+            <button id="btn1" onclick="openHTML()"> <i class="fa-brands fa-html5"></i>HTML</button>
+           
+            <button id="btn2"onclick="openCSS()"> <i class="fa-brands fa-css3"></i>CSS</button>
+            
+            <button id="btn3" onclick="openJS()"><i class="fa-brands fa-js"></i>JAVASCRIPT</button>
+
+            
+        </div>
+
+        <div class="content" id="content1">
+            <div class="content-left">
+                <h1>Learn HTML</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam reiciendis ab corrupti in dicta molestiae ad ipsa architecto esse minima laborum, doloribus iure assumenda vitae qui recusandae non eius quas exercitationem eos perspiciatis labore. Ipsam aspernatur quo vel qui mollitia pariatur similique, architecto obcaecati! Cupiditate nostrum mollitia omnis eveniet nobis.</p>
+                <a href="#">Watch Video</a>
+            </div>  
+    
+                
+                <div class="content-right">
+                    <img src="https://img.freepik.com/free-vector/tiny-people-family-with-kids-watching-smart-television-content-smart-tv-content-smart-tv-interactive-show-high-resolution-content-concept_335657-2416.jpg?w=740&t=st=1709116454~exp=1709117054~hmac=eb7b5b9ae5f10ea6f14034f88ee3e65bdd68d7c9a48876c9574b4fe69b084e07" alt="">
+                </div>
+            </div>
+        <div class="content" id="content2">
+            <div class="content-left">
+                <h1>Learn CSS </h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam reiciendis ab corrupti in dicta molestiae ad ipsa architecto esse minima laborum, doloribus iure assumenda vitae qui recusandae non eius quas exercitationem eos perspiciatis labore. Ipsam aspernatur quo vel qui mollitia pariatur similique, architecto obcaecati! Cupiditate nostrum mollitia omnis eveniet nobis.</p>
+                <a href="#">Watch Video</a>
+            </div>  
+    
+                
+                <div class="content-right">
+                    <img src="https://img.freepik.com/free-vector/tiny-people-family-with-kids-watching-smart-television-content-smart-tv-content-smart-tv-interactive-show-high-resolution-content-concept_335657-2416.jpg?w=740&t=st=1709116454~exp=1709117054~hmac=eb7b5b9ae5f10ea6f14034f88ee3e65bdd68d7c9a48876c9574b4fe69b084e07" alt="">
+                </div>
+            </div>
+        <div class="content"id="content3">
+            <div class="content-left">
+                <h1>Learn JAVASCRIPT</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam reiciendis ab corrupti in dicta molestiae ad ipsa architecto esse minima laborum, doloribus iure assumenda vitae qui recusandae non eius quas exercitationem eos perspiciatis labore. Ipsam aspernatur quo vel qui mollitia pariatur similique, architecto obcaecati! Cupiditate nostrum mollitia omnis eveniet nobis.</p>
+                <a href="#">Watch Video</a>
+            </div>  
+    
+                
+                <div class="content-right">
+                    <img src="https://img.freepik.com/free-vector/tiny-people-family-with-kids-watching-smart-television-content-smart-tv-content-smart-tv-interactive-show-high-resolution-content-concept_335657-2416.jpg?w=740&t=st=1709116454~exp=1709117054~hmac=eb7b5b9ae5f10ea6f14034f88ee3e65bdd68d7c9a48876c9574b4fe69b084e07" alt="">
+                </div>
+            </div>
+        
+    </div>
+    <script>
+        let contentOne = document.getElementById('content1')
+        let contentTwo = document.getElementById('content2')
+        let contentThree = document.getElementById('content3')
+        let btnOne = document.getElementById('btn1')
+        let btnTwo = document.getElementById('btn2')
+        let btnThree = document.getElementById('btn3')
+
+        function openHTML(){
+            contentOne.style.transform='translateX(0)'
+            contentTwo.style.transform='translateX(100%)'
+            contentThree.style.transform='translateX(100%)'
+            btn1.style.color = '#ff7846'
+            btn2.style.color = '#000'
+            btn3.style.color = '#000'
+            contentOne.style.transitionDelay = '0.3s'
+            contentTwo.style.transitionDelay = '0s'
+            contentThree.style.transitionDelay = '0s'
+        }
+        function openCSS(){
+            contentOne.style.transform='translateX(100%)'
+            contentTwo.style.transform='translateX(0)'
+            contentThree.style.transform='translateX(100%)'
+            btn2.style.color = '#ff7846'
+            btn1.style.color = '#000'
+            btn3.style.color = '#000'
+            contentOne.style.transitionDelay = '0s'
+            contentTwo.style.transitionDelay = '0.3s'
+            contentThree.style.transitionDelay = '0s'
+        }
+        function openJS(){
+            contentOne.style.transform='translateX(100%)'
+            contentTwo.style.transform='translateX(100%)'
+            contentThree.style.transform='translateX(0%)'
+            btn3.style.color = '#ff7846'
+            btn2.style.color = '#000'
+            btn1.style.color = '#000'
+            contentOne.style.transitionDelay = '0s'
+            contentTwo.style.transitionDelay = '0s'
+            contentThree.style.transitionDelay = '0.3s'
+        }
+    </script>
+</body>
+</html>
